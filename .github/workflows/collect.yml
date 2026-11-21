@@ -1,7 +1,7 @@
 name: collect
 on:
   schedule:
-    - cron: "7 * * * *"   # kazdou hodinu
+    - cron: "*/10 * * * *"   # GitHub plany casto vynechava -> zkousime co 10 min, beze zmeny = 304
   workflow_dispatch:
 permissions:
   contents: write
